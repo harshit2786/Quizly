@@ -1,5 +1,8 @@
-import { Text, View } from "react-native";
+import React, { useState } from "react";
+import { View, Text, TextInput, Button } from "react-native";
 import "../global.css";
+import { Link } from "expo-router";
+
 export default function Index() {
   return (
     <View
@@ -10,7 +13,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="text-2xl">Hello World</Text>
+      <Link href="/Home" >Go to quiz</Link>
     </View>
   );
 }
